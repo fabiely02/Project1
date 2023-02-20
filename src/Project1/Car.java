@@ -13,16 +13,18 @@ package Project1;
 public class Car {
    String model;
    int speed;
+   int manuf_year;
    /**
     * <p> Constructorr Car is been used to initialise the two attributes that is<br>
     * model and speed
     * @param model- used to get the name of car model
     * @param speed-used to get the speed of the car
     */
-    Car (String model,int speed)
+    Car (String model,int speed,int manuf_year)
     {
     	this.model=model;
     	this.speed=speed;
+    	this.manuf_year=manuf_year;
     }
   
     	/**
@@ -62,7 +64,7 @@ public class Car {
      */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-       Car C1=new Car("HONDA",60);
+       Car C1=new Car("HONDA",60,2002);
        C1.go_faster(10);
        C1.go_slower(10);
        C1.stop_car();
